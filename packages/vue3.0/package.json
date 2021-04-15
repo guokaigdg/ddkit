@@ -1,0 +1,26 @@
+{
+  "name": "vue3.0",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "guokai05 <guokai05@baidu.com>",
+  "homepage": "https://github.com/guokaigdg/fmj-vue2.0#readme",
+  "license": "ISC",
+  "main": "lib/vue3.0.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guokaigdg/fmj-vue2.0.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/guokaigdg/fmj-vue2.0/issues"
+  }
+}
