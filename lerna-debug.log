@@ -1,0 +1,16 @@
+0 silly argv { _: [ 'list' ], lernaVersion: '4.0.0', '$0': 'lerna' }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/ma_meng/Desktop/GUOKAI/NTGMJ
+3 error JSONError: Unexpected token "/" (0x2F) in JSON at position 176 while parsing near "...vue2.0#readme\",\n    // \"private\": true,\n..." in packages/fmj-front2.0/package.json
+3 error
+3 error [0m [90m  5 |[39m     [32m"author"[39m[33m:[39m [32m"guokaigdg"[39m[33m,[39m[0m
+3 error [0m [90m  6 |[39m     [32m"homepage"[39m[33m:[39m [32m"https://github.com/guokaigdg/fmj-vue2.0#readme"[39m[33m,[39m[0m
+3 error [0m[31m[1m>[22m[39m[90m  7 |[39m     [90m// "private": true,[39m[0m
+3 error [0m [90m    |[39m     [31m[1m^[22m[39m[0m
+3 error [0m [90m  8 |[39m     [32m"license"[39m[33m:[39m [32m"ISC"[39m[33m,[39m[0m
+3 error [0m [90m  9 |[39m     [32m"main"[39m[33m:[39m [32m"lib/fmj-front2.0.js"[39m[33m,[39m[0m
+3 error [0m [90m 10 |[39m     [32m"directories"[39m[33m:[39m {[0m
+3 error
+3 error     at parseJson (/usr/local/lib/node_modules/lerna/node_modules/parse-json/index.js:29:21)
+3 error     at parse (/usr/local/lib/node_modules/lerna/node_modules/load-json-file/index.js:15:9)
+3 error     at module.exports (/usr/local/lib/node_modules/lerna/node_modules/load-json-file/index.js:18:47)
