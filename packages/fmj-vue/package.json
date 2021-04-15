@@ -2,7 +2,7 @@
     "name": "fmj-vue",
     "version": "0.1.0",
     "description": "> TODO: description",
-    "author": "guokai05 <guokai05@baidu.com>",
+    "author": "guokai05",
     "homepage": "https://github.com/guokaigdg/fmj-vue2.0#readme",
     "license": "ISC",
     "main": "lib/fmj-vue.js",
