@@ -17,5 +17,5 @@ fmj-end : agg
 fmj-front2.0 : vue2.0
 fmj-front3.0: vue3.0
 fmj-react: react项目
-Pkit: 支持react vue 的脚手架
+Bkit: 支持react vue 的脚手架
 ```

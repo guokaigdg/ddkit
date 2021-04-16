@@ -1,0 +1,52 @@
+{
+    "name": "bkit",
+    "version": "1.2.0",
+    "description": "> TODO: description",
+    "main": "lib/Pkit.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint src"
+    },
+    "bin": {
+        "bkit": "./bin/index"
+    },
+    "keywords": [],
+    "author": "ma_meng",
+    "license": "ISC",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.11.0",
+        "@typescript-eslint/parser": "^4.11.0",
+        "eslint": "^7.16.0",
+        "husky": "^4.3.6"
+    },
+    "dependencies": {
+        "boxen": "^4.2.0",
+        "chalk": "^4.1.0",
+        "child_process": "^1.0.2",
+        "commander": "^6.2.1",
+        "download-git-repo": "^3.0.2",
+        "fs-extra": "^9.0.1",
+        "inquirer": "^7.3.3",
+        "mem-fs": "^1.2.0",
+        "mem-fs-editor": "^8.0.0",
+        "mkdirp": "^1.0.4",
+        "ora": "^5.1.0",
+        "path": "^0.12.7",
+        "update-notifier": "^5.0.1"
+    },
+    "homepage": "https://github.com/guokaigdg/fmj-vue2.0#readme",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/guokaigdg/fmj-vue2.0.git"
+    },
+    "bugs": {
+        "url": "https://github.com/guokaigdg/fmj-vue2.0/issues"
+    }
+}

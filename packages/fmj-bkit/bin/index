@@ -1,0 +1,51 @@
+#! /usr/bin/env node
+const program = require("commander");
+const chalk = require("chalk");
+const download = require("download-git-repo");
+const { action, name } = require("commander");
+const { versionBoxen, bigText } = require("./util/bigText");
+const { actionsMap } = require("./util/actionsMap");
+const updateChk = require("../lib/update");
+const createApp = require("../lib/create");
+const initNpm = require("../lib/init-npm");
+
+//获取版本号
+program.version(versionBoxen, "-v, --version", " 获取版本号");
+
+//获取帮助
+program.on("--help", () => {
+  console.log("");
+  console.log("Examples");
+  Object.keys(actionsMap).forEach((action) => {
+    (actionsMap[action].examples || []).forEach((example) => {
+      console.log(`${example}`);
+    });
+  });
+});
+
+// 查询更新
+program
+  .command("update")
+  .description("xxxx")
+  .action(() => {
+    updateChk();
+  });
+
+// 创建项目
+program
+  .command("create <app-name>")
+  .description("初始化组件模板")
+  .option("-d --dir <dir>", "创建目录")
+  .action((name) => {
+    console.log(chalk.magenta(bigText));
+    if (action === "*") {
+      console.log("command not found");
+    } else {
+
+        createApp(name);
+        // initNpm(name);
+
+    }
+  });
+
+program.parse(process.argv);
