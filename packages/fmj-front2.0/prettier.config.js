@@ -4,7 +4,7 @@
 // 比较好的文章：https://juejin.im/post/5cc58039f265da03775c5a6f
 
 module.exports = {
-    // trailingComma: 'es5', // 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）
+    trailingComma: 'es5', // 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）
     tabWidth: 4,
     semi: true,
     singleQuote: true,

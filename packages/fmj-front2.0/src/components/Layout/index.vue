@@ -33,7 +33,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 .wrap{
   width: '100vw';
   height: '100vh';
