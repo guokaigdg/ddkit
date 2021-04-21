@@ -1,9 +1,13 @@
 <template>
   <el-container>
-    <el-header class="header">Header</el-header>
-    <el-container>
-      <el-aside class="menu">
-        <Menu/>
+    <el-header class="header">
+      这里是头部
+    </el-header>
+    <el-container >
+      <el-aside width ='220px'>
+        <div class="menu">
+          <Menu/>
+        </div>
       </el-aside>
       <el-container>
         <el-header class="header1" >Header</el-header>
@@ -37,21 +41,25 @@ export default {
 }
 .header{
   height: 100px;
-  background-color: rgb(231, 231, 231);
+  background-color: #E9EEF3;
 }
 .header1{
   background-color: bisque;
 }
-.menu{
-  width: 200px;
-  height: '100vh';
-  background-color: rgb(84, 92, 100)
-}
-.main{
-  height: calc(100vh - 180px);
+.el-aside {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    line-height: 200px;
+  }
+.el-main{
+    height: calc(100vh - 180px);
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
 }
 .foot{
-  background-color: bisque;
+  background-color: rgb(235, 200, 157);
 }
 
 </style>

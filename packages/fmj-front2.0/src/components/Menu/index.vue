@@ -1,13 +1,15 @@
 <template>
-  <div style="width: 100%" >
       <el-menu
-        default-active="2"
-        class="el-menu-vertical-demo"
+        class="el-menu-vertical"
         @open="handleOpen"
         @close="handleClose"
-        background-color="#545c64"
+        background-color="#E9EEF3"
+        active-text-color="rgb(249 144 23)" 
+      >
+        <!-- default-active="2" -->
+        <!-- 
         text-color="#fff"
-        active-text-color="#ffd04b">
+        -->
         <el-submenu index="1">
           <template slot="title">
               <i class="el-icon-location"></i>
@@ -39,7 +41,7 @@
             <span slot="title">导航四</span>
           </el-menu-item>
       </el-menu>
-  </div>
+
 </template>
 
 <script>
@@ -57,5 +59,9 @@ export default {
 </script>
 
 <style scoped>
-
+/* .el-menu-vertical{ */
+  /* width: '100%'; */
+  /* height: '100vh'; */
+  /* background-color: E9EEF3; */
+/* } */
 </style>
