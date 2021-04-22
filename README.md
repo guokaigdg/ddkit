@@ -13,7 +13,7 @@ NTGMJ: 你猜是什么缩写
 ## 📦 packages 介绍
 
 ```
-fmj-end : agg
+fmj-end : egg.js
 fmj-front2.0 : vue2.0
 fmj-front3.0: vue3.0
 fmj-react: react项目
