@@ -1,26 +1,46 @@
 {
-    "name": "fmj-end",
-    "version": "0.0.0",
-    "description": "> TODO: description",
-    "author": "ma_meng",
-    "homepage": "https://github.com/guokaigdg/fmj-vue2.0#readme",
-    "license": "ISC",
-    "main": "lib/fmj-end.js",
-    "directories": {
-        "lib": "lib",
-        "test": "__tests__"
-    },
-    "files": [
-        "lib"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/guokaigdg/fmj-vue2.0.git"
-    },
-    "scripts": {
-        "test": "echo \"Error: run tests from root\" && exit 1"
-    },
-    "bugs": {
-        "url": "https://github.com/guokaigdg/fmj-vue2.0/issues"
-    }
+	"name": "fmj-end",
+	"version": "1.0.0",
+	"description": "",
+	"private": true,
+	"egg": {
+		"declarations": true
+	},
+	"dependencies": {
+		"egg": "^2.15.1",
+		"egg-scripts": "^2.11.0"
+	},
+	"devDependencies": {
+		"autod": "^3.0.1",
+		"autod-egg": "^1.1.0",
+		"egg-bin": "^4.11.0",
+		"egg-ci": "^1.11.0",
+		"egg-mock": "^3.21.0",
+		"eslint": "^5.13.0",
+		"eslint-config-egg": "^7.1.0"
+	},
+	"engines": {
+		"node": ">=10.0.0"
+	},
+	"scripts": {
+		"start": "egg-scripts start --daemon --title=egg-server-fmj-end",
+		"stop": "egg-scripts stop --title=egg-server-fmj-end",
+		"dev": "egg-bin dev --port 7001",
+		"debug": "egg-bin debug",
+		"test": "npm run lint -- --fix && npm run test-local",
+		"test-local": "egg-bin test",
+		"cov": "egg-bin cov",
+		"lint": "eslint .",
+		"ci": "npm run lint && npm run cov",
+		"autod": "autod"
+	},
+	"ci": {
+		"version": "10"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"author": "",
+	"license": "MIT"
 }

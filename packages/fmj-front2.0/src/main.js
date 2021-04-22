@@ -1,11 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2021-04-22 00:14:49
- * @LastEditTime: 2021-04-22 02:34:45
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /NTGMJ/packages/fmj-front2.0/src/main.js
- */
 import Vue from 'vue'
 import ElementUI from 'element-ui';
 // import Router from 'vue-router' 
@@ -25,4 +17,3 @@ new Vue({
   router,
   render: h =>h(App)
 }).$mount("#app")
-

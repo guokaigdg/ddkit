@@ -1,12 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2021-04-22 00:14:49
- * @LastEditTime: 2021-04-22 02:36:51
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /NTGMJ/packages/fmj-front2.0/src/router/index.js
- */
-
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Hello  from '../components/Hello';
@@ -14,7 +5,7 @@ import page2  from '../components/Main';
 import App  from '../components/Hello';
 
 Vue.use(VueRouter)
-//定义routes路由的集合，数组类型
+
 const routes=[
     {
         path:'/hi',
