@@ -22,6 +22,14 @@ module.exports =  {
   },
   optimization: {
     splitChunks: {
+      name(module, chunks, cacheGroupKey) {
+        const moduleFileName = module
+          .identifier()
+          .split('/')
+          .reduceRight((item) => item);
+        const allChunksNames = chunks.map((item) => item.name).join('~>');
+        return `${cacheGroupKey}-${allChunksNames}-${moduleFileName}`;
+      },
       chunks: 'all',   // 拆分范围:  三种模式 async (不拆分入口文件)| initial (只拆分入口文件) | all (拆分所有文件)
       minSize: 30000,  // 生成块的最小大小(以字节为单位)。
       minChunks: 1,   //  包被引用 >=1 次, 就会进行chunk模块进行拆分, (默认的minChunks=1)
@@ -39,7 +47,8 @@ module.exports =  {
         default: {
           minChunks: 2,   // 本地包被引用 >=2 次, 就会进行chunk模块进行拆分,, 权重小于vendors (对比priority)
           priority: -20,   // 权重, 先vendors引用包, 再找本地包,  因为default 权重小于vendors 
-          reuseExistingChunk: true 
+          reuseExistingChunk: true
+          // reuseExistingChunk: false 
         }
       }
     },
