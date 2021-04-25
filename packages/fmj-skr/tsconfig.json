@@ -3,6 +3,7 @@
         "src",
     ],
     "compilerOptions": {
+        "experimentalDecorators": true,
         "module": "CommonJS",
         "target": "es2018",
         "outDir": "dist",
