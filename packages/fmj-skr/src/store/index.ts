@@ -26,8 +26,12 @@ class AppStore {
         this.time = monment().format('YYYY/MM/DD HH:mm:ss');
     }
     // 数量 + 1
-    setCount = () => {
+    setAddCount = () => {
         this.count++;
+    };
+    // 数量 + 1
+    setReduceCount = () => {
+        this.count--;
     };
 }
 

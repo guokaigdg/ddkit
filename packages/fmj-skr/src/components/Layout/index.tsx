@@ -7,18 +7,41 @@
  */
 
 import React from 'react';
+import {Button} from '@material-ui/core';
 import {observer} from 'mobx-react-lite';
-import {store} from '../../store';
+import Content from '@/components/content';
+import {store} from '@/store';
+import './index.less';
+
 
 const Layout: React.FC = () => {
-    const {secondsPassed, time, count, setCount} = store;
-
+    const {secondsPassed, time, count, setAddCount, setReduceCount} = store;
     return (
-        <div>
-            <p>数字: {secondsPassed}</p>
-            <span>时间: {time}</span>
-            <p>{count}</p>
-            <button onClick={setCount}>点击数字加一</button>
+        <div style={{display: 'flex', justifyContent: 'space-between'}}>
+            <div>
+                <p>动态数字: {secondsPassed}</p>
+                <span>北京时间: {time}</span>
+                <p>数字: {count}</p>
+                <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={setAddCount}
+                >
+                    点击数字加 + 1
+                </Button>
+                <br />
+                <br />
+                <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={setReduceCount}
+                >
+                    点击数字加 - 1
+                </Button>
+            </div>
+            <div>
+                <Content />
+            </div>
         </div>
     );
 };

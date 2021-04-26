@@ -6,11 +6,14 @@
  * @LastEditTime: 2021-04-25 15:01:08
  */
 import {FC} from 'react';
-import Layout from '../components/Layout';
+import Layout from '@/components/Layout';
+
 
 const App: FC = () => {
     return (
-        <Layout />
+        <>
+            <Layout />
+        </>
     );
 };
 
