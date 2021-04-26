@@ -3,12 +3,13 @@
  * @Author: guokai
  * @Date: 2021-04-25 14:59:22
  * @LastEditors: guokai
- * @LastEditTime: 2021-04-25 19:51:47
+ * @LastEditTime: 2021-04-26 10:17:42
  */
 import React from 'react';
 // import {useObserver, useLocalStore, observer} from 'mobx-react';
 import {useObserver, useLocalStore, observer} from 'mobx-react';
-import {observer as observerLite} from 'mobx-react-lite';
+// import {observer as observerLite} from 'mobx-react-lite';
+import {QuickFind} from '../QuickFind';
 
 import {store} from '../../store';
 
@@ -28,6 +29,7 @@ const Layoyt: React.FC = () => {
             <button onClick={myStore.setCount}>
                 +
             </button>
+            <QuickFind />
         </div>
     ));
 
