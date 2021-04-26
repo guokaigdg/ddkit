@@ -1,3 +1,10 @@
+/*
+ * @file:
+ * @Author: guokai
+ * @Date: 2021-04-26 10:14:38
+ * @LastEditors: guokai
+ * @LastEditTime: 2021-04-26 10:30:11
+ */
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import {styled} from '@material-ui/core/styles';
@@ -24,8 +31,8 @@ const Des = styled('span')({
 });
 
 const useThemeStyles = makeStyles(theme => {
-    const NotFindItem =
-    theme && (theme).components.workspace.QuickFind.NotFindItem;
+    const NotFindItem = theme;
+    // theme && (theme).components.workspace.QuickFind.NotFindItem;
     return {
         title: {
             color: NotFindItem.title.color,

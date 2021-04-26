@@ -57,8 +57,8 @@ const Title = styled('div')({
 });
 
 const useThemeStyles = makeStyles(theme => {
-    const RecentSearchesItem =
-    theme && (theme).components.workspace.QuickFind.RecentSearchesItem;
+    const RecentSearchesItem = theme;
+    // theme && (theme).components.workspace.QuickFind.RecentSearchesItem;
     return {
         itemChoosed: {
             color: RecentSearchesItem.keyboardReturnIcon.color,

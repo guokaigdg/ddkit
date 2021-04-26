@@ -36,8 +36,8 @@ const Button = styled('div')({
 });
 
 const useThemeStyles = makeStyles(theme => {
-    const ItemTitle =
-    theme && (theme).components.workspace.QuickFind.ItemTitle;
+    const ItemTitle = theme;
+    // theme && (theme).components.workspace.QuickFind.ItemTitle;
     return {
         title: {
             color: ItemTitle.title.color,

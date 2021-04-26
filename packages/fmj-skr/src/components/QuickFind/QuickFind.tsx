@@ -93,14 +93,14 @@ const SearchResultsArea = styled('div')({
 });
 
 const useThemeStyles = makeStyles(theme => {
-    const QuickFind =
-    theme && (theme).components.workspace.QuickFind.QuickFind;
+    const QuickFind = theme;
+    // theme && (theme).components.workspace.QuickFind.QuickFind;
     return {
         root: {
-            backgroundColor: QuickFind.backgroundColor,
+            backgroundColor: QuickFind?.backgroundColor,
         },
         divider: {
-            backgroundColor: QuickFind.Divider.color,
+            backgroundColor: QuickFind?.Divider.color,
         },
     };
 });

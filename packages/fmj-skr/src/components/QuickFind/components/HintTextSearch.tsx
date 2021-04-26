@@ -1,3 +1,10 @@
+/*
+ * @file:
+ * @Author: guokai
+ * @Date: 2021-04-26 10:14:38
+ * @LastEditors: guokai
+ * @LastEditTime: 2021-04-26 10:29:10
+ */
 import React from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import {makeStyles} from '@material-ui/core/styles';
@@ -24,8 +31,8 @@ const Text = styled('span')({
 });
 
 const useThemeStyles = makeStyles(theme => {
-    const HintTextSearch =
-    theme && (theme).components.workspace.QuickFind.HintTextSearch;
+    const HintTextSearch = theme;
+    // theme && (theme).components.workspace.QuickFind.HintTextSearch;
     return {
         count: {
             color: HintTextSearch.count.color,

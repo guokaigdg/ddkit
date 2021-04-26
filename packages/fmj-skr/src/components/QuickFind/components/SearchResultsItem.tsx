@@ -67,8 +67,8 @@ const Text = styled('span')({
 });
 
 const useThemeStyles = makeStyles(theme => {
-    const SearchResultsItem =
-    theme && (theme).components.workspace.QuickFind.SearchResultsItem;
+    const SearchResultsItem = theme;
+    // theme && (theme).components.workspace.QuickFind.SearchResultsItem;
     return {
         itemChoosed: {
             color: SearchResultsItem.keyboardReturnIcon.color,

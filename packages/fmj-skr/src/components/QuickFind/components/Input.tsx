@@ -50,7 +50,8 @@ const TrashInput = styled('input')({
 });
 
 const useThemeStyles = makeStyles(theme => {
-    const Input = theme && (theme).components.workspace.QuickFind.Input;
+    const Input = theme;
+    // theme && (theme).components.workspace.QuickFind.Input;
     return {
         input: {
             color: Input.input.color,

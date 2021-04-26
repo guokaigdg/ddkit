@@ -50,8 +50,8 @@ const Item = styled('div')({
 });
 
 const useThemeStyles = makeStyles(theme => {
-    const SortButton =
-    theme && (theme).components.workspace.QuickFind.SortButton;
+    const SortButton = theme;
+    // theme && (theme).components.workspace.QuickFind.SortButton;
     return {
         button: {
             color: SortButton.button.color,

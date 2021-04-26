@@ -5,31 +5,38 @@
  * @LastEditors: guokai
  * @LastEditTime: 2021-04-25 19:49:09
  */
-// import {createContext, useContext} from 'react';
-import {observable, action} from 'mobx';
+
+
+import {makeAutoObservable} from 'mobx';
 import monment from 'moment';
 
 class AppStore {
-    @observable time = '2021';
-    @observable count = 1;
-    @action setCount = () => {
-        this.count++;
-        // eslint-disable-next-line no-console
-        console.log('🚀 ~ file: ithis.count++', this.count++);
-    };
-    @action getNow() {
+    secondsPassed = 0;
+    count = 0;
+    time = monment().format('YYYY/MM/DD HH:mm:ss');
+
+    constructor() {
+        makeAutoObservable(this);
+    }
+
+    getSecondsPassed() {
+        this.secondsPassed += 1;
+    }
+    getNow() {
         this.time = monment().format('YYYY/MM/DD HH:mm:ss');
     }
+    // 数量 + 1
+    setCount = () => {
+        this.count++;
+    };
 }
+
 const store = new AppStore();
 
 setInterval(() => {
+    store.getSecondsPassed();
     store.getNow();
 }, 1000);
-
-
-// const StoresContext = createContext(store);
-// const useStores = () => useContext(StoresContext);
 
 
 export {store};

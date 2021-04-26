@@ -3,7 +3,7 @@
  * @Author: guokai
  * @Date: 2021-04-26 10:14:38
  * @LastEditors: guokai
- * @LastEditTime: 2021-04-26 10:18:29
+ * @LastEditTime: 2021-04-26 10:29:01
  */
 import React from 'react';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
@@ -35,8 +35,8 @@ const Enter = styled('span')({
 });
 
 const useThemeStyles = makeStyles(theme => {
-    const HintTextDefault =
-    theme && (theme).components.workspace.QuickFind.HintTextDefault;
+    const HintTextDefault = theme;
+    // theme && (theme).components.workspace.QuickFind.HintTextDefault;
     return {
         root: {
             color: HintTextDefault.root.color,

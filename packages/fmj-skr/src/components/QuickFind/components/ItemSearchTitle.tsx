@@ -3,7 +3,7 @@
  * @Author: guokai
  * @Date: 2021-04-26 10:14:38
  * @LastEditors: guokai
- * @LastEditTime: 2021-04-26 10:18:37
+ * @LastEditTime: 2021-04-26 10:29:53
  */
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
@@ -26,8 +26,8 @@ const Title = styled('div')({
 });
 
 const useThemeStyles = makeStyles(theme => {
-    const ItemSearchTitle =
-    theme && (theme).components.workspace.QuickFind.ItemSearchTitle;
+    const ItemSearchTitle = theme;
+    // theme && (theme).components.workspace.QuickFind.ItemSearchTitle;
     return {
         title: {
             color: ItemSearchTitle.title.color,
