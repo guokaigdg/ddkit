@@ -43,4 +43,4 @@ setInterval(() => {
 }, 1000);
 
 
-export {store};
+export default store;

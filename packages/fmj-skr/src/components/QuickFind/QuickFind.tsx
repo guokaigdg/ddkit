@@ -1,4 +1,4 @@
-import React, {FunctionComponent, useState, useRef, useCallback} from 'react';
+import React, {FC, useState, useRef, useCallback} from 'react';
 import Input from './components/Input';
 import {styled} from '@material-ui/core/styles';
 import {makeStyles} from '@material-ui/styles';
@@ -97,15 +97,15 @@ const useThemeStyles = makeStyles(theme => {
     // theme && (theme).components.workspace.QuickFind.QuickFind;
     return {
         root: {
-            backgroundColor: QuickFind?.backgroundColor,
+            backgroundColor: QuickFind.backgroundColor,
         },
         divider: {
-            backgroundColor: QuickFind?.Divider.color,
+            backgroundColor: QuickFind.Divider.color,
         },
     };
 });
 
-const QuickFind: FunctionComponent<QuickFindProps> = props => {
+const QuickFind: FC<QuickFindProps> = props => {
     const {
         isLoding,
         isNotFind,
@@ -113,11 +113,8 @@ const QuickFind: FunctionComponent<QuickFindProps> = props => {
         recentSearchesData,
         searchResultsData,
         onSearch,
-        notFindText,
-        placeholder,
-        onClickItem,
-        onSortRules,
     } = props;
+    const {notFindText, placeholder, onClickItem, onSortRule} = props;
 
     const [isShowPageClearButton, setIsShowPageClearButton] = useState(false);
     const [isShowSearchClearButton, setIsShowSearchClearButton] = useState(false);
@@ -232,7 +229,7 @@ const QuickFind: FunctionComponent<QuickFindProps> = props => {
             setNewChoosedSearchItem(res);
             setNewChoosedPageItem(-1);
         },
-        [newChoosedSearchItem]
+        []
     );
 
     if (isNotFind) {
