@@ -18,7 +18,7 @@
         "url": "git+https://github.com/guokaigdg/fmj-vue2.0.git"
     },
     "scripts": {
-        "start": "skr dev",
+        "dev": "skr dev",
         "build": "skr build --clean",
         "lint": "skr lint",
         "lint-staged": "skr lint --staged"

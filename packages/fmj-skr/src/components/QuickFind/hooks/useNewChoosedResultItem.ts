@@ -1,10 +1,3 @@
-/*
- * @file:
- * @Author: guokai
- * @Date: 2021-04-26 10:14:38
- * @LastEditors: guokai
- * @LastEditTime: 2021-04-26 10:16:13
- */
 /**
  * 搜索结果list项目键盘事件跳转
  * @param {listItemHeight[num] } 子项目高度数组
@@ -28,44 +21,44 @@ interface Params {
 }
 
 function useNewChoosedResultItem({
-    event,
-    DivEl,
-    newChoosedResultItem,
-    searchResultsData,
-    listItemOffsetTop,
-    listItemHeight,
+  event,
+  DivEl,
+  newChoosedResultItem,
+  searchResultsData,
+  listItemOffsetTop,
+  listItemHeight,
 }: Params): number {
-    const listWrapHeight = (DivEl.current).clientHeight;
-    const listWrapScrollTop = (DivEl.current).scrollTop;
+  const listWrapHeight = (DivEl.current as any).clientHeight;
+  const listWrapScrollTop = (DivEl.current as any).scrollTop;
 
-    let num = newChoosedResultItem;
-    const leng = searchResultsData.length;
+  let num = newChoosedResultItem;
+  let leng = searchResultsData.length;
 
-    if ((event as any).key === 'ArrowUp') {
-        num--;
-        if (num < 0) {
-            num = 0;
-        }
-        const AltitudeDifference =
-      listItemOffsetTop[num] - listWrapScrollTop - listItemOffsetTop[0];
-        if (AltitudeDifference < 0) {
-            (DivEl.current).scrollBy(0, AltitudeDifference);
-        }
-    } else if ((event as any).key === 'ArrowDown') {
-        num++;
-        if (num > leng - 1) {
-            num = leng - 1;
-        }
-        const AltitudeDifference =
-      listItemOffsetTop[num] - listWrapScrollTop - listItemOffsetTop[0];
-        if (AltitudeDifference + listItemHeight[num] > listWrapHeight) {
-            (DivEl.current).scrollBy(
-                0,
-                AltitudeDifference + listItemHeight[num] - listWrapHeight
-            );
-        }
+  if ((event as any).key === 'ArrowUp') {
+    num--;
+    if (num < 0) {
+      num = 0;
     }
-    return num;
+    const AltitudeDifference =
+      listItemOffsetTop[num] - listWrapScrollTop - listItemOffsetTop[0];
+    if (AltitudeDifference < 0) {
+      (DivEl.current as any).scrollBy(0, AltitudeDifference);
+    }
+  } else if ((event as any).key === 'ArrowDown') {
+    num++;
+    if (num > leng - 1) {
+      num = leng - 1;
+    }
+    const AltitudeDifference =
+      listItemOffsetTop[num] - listWrapScrollTop - listItemOffsetTop[0];
+    if (AltitudeDifference + listItemHeight[num] > listWrapHeight) {
+      (DivEl.current as any).scrollBy(
+        0,
+        AltitudeDifference + listItemHeight[num] - listWrapHeight,
+      );
+    }
+  }
+  return num;
 }
 
 export default useNewChoosedResultItem;

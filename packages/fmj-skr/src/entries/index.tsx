@@ -7,7 +7,7 @@
  */
 
 import {render} from 'react-dom';
-import App from '../index/index';
+import App  from '../index/index';
 
 
 render(<App />, document.body.appendChild(document.createElement('div')));

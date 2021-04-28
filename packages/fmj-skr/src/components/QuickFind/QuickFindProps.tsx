@@ -23,7 +23,6 @@ export interface searchResultsDataType {
   title: string;
   des: string;
 }
-// eslint-disable-next-line no-unused-expressions
 [];
 
 export interface QuickFindProps {

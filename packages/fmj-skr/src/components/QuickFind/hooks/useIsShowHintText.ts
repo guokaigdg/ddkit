@@ -6,18 +6,18 @@ interface Params {
 }
 
 function useIsShowHintText({
-    recentPagesData,
-    recentSearchesData,
-    isShowReactPages,
-    isShowReactSearches,
+  recentPagesData,
+  recentSearchesData,
+  isShowReactPages,
+  isShowReactSearches,
 }: Params): boolean {
-    if (recentPagesData && isShowReactPages) {
-        return true;
-    } else if (recentSearchesData && isShowReactSearches) {
-        return true;
-    } else {
-        return false;
-    }
+  if (recentPagesData && isShowReactPages) {
+    return true;
+  } else if (recentSearchesData && isShowReactSearches) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 export default useIsShowHintText;

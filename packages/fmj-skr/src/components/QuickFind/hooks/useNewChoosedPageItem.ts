@@ -3,18 +3,18 @@ interface Params {
   newChoosedPageItem: number;
 }
 
-function useNewChoosedPageItem({event, newChoosedPageItem}: Params): number {
-    let num = newChoosedPageItem;
+function useNewChoosedPageItem({ event, newChoosedPageItem }: Params): number {
+  let num = newChoosedPageItem;
 
-    if ((event as any).key === 'ArrowUp') {
-        num--;
-        if (num < 0) {
-            num = 0;
-        }
-    } else if ((event as any).key === 'ArrowDown') {
-        num++;
+  if ((event as any).key === 'ArrowUp') {
+    num--;
+    if (num < 0) {
+      num = 0;
     }
-    return num;
+  } else if ((event as any).key === 'ArrowDown') {
+    num++;
+  }
+  return num;
 }
 
 export default useNewChoosedPageItem;

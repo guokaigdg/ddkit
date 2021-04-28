@@ -1,38 +1,31 @@
-/*
- * @file:
- * @Author: guokai
- * @Date: 2021-04-26 10:14:38
- * @LastEditors: guokai
- * @LastEditTime: 2021-04-26 10:29:53
- */
 import React from 'react';
-import {makeStyles} from '@material-ui/core/styles';
-import {styled} from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
+import { styled } from '@material-ui/core/styles';
 import SortButton from './SortButton';
 
 const Root = styled('div')({
-    display: 'flex',
-    alignItems: 'center',
-    height: 32,
-    marginLeft: 14,
-    marginRight: 14,
-    userSelect: 'none',
+  display: 'flex',
+  alignItems: 'center',
+  height: 32,
+  marginLeft: 14,
+  marginRight: 14,
+  userSelect: 'none',
 });
 
 const Title = styled('div')({
-    fontSize: 12,
-    marginRight: 6,
-    color: 'rgba(55, 53, 47, 0.4)',
+  fontSize: 12,
+  marginRight: 6,
+  color: 'rgba(55, 53, 47, 0.4)',
 });
 
 const useThemeStyles = makeStyles(theme => {
-    const ItemSearchTitle = theme;
-    // theme && (theme).components.workspace.QuickFind.ItemSearchTitle;
-    return {
-        title: {
-            color: ItemSearchTitle.title.color,
-        },
-    };
+  const ItemSearchTitle =
+    theme && (theme as any).components.workspace.QuickFind.ItemSearchTitle;
+  return {
+    title: {
+      color: ItemSearchTitle.title.color,
+    },
+  };
 });
 
 interface ItemSearchTitleProps {
@@ -41,14 +34,14 @@ interface ItemSearchTitleProps {
 }
 
 function ItemSearchTitle(props: ItemSearchTitleProps) {
-    const {text, onClick} = props;
-    const themeClasses = useThemeStyles();
-    return (
-        <Root>
-            <Title className={themeClasses.title}>{text}</Title>
-            <SortButton onClick={onClick} />
-        </Root>
-    );
+  const { text, onClick } = props;
+  const themeClasses = useThemeStyles();
+  return (
+    <Root>
+      <Title className={themeClasses.title}>{text}</Title>
+      <SortButton onClick={onClick} />
+    </Root>
+  );
 }
 
 export default ItemSearchTitle;
