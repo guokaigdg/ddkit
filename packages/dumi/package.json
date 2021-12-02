@@ -1,0 +1,26 @@
+{
+  "name": "dumi",
+  "version": "0.0.0",
+  "description": "组件库使用说明",
+  "author": "guokai05 <guokai05@baidu.com>",
+  "homepage": "http://wwww.guokaigdg.com/didiui",
+  "license": "ISC",
+  "main": "lib/dumi.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guokaigdg/NTGMJ.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/guokaigdg/NTGMJ/issues"
+  }
+}
