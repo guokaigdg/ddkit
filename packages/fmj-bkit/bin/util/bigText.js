@@ -2,7 +2,7 @@ const { version } = require("../../package.json");
 const boxen = require("boxen");
 const chalk = require("chalk");
 
-const bigText = `
+const bigText = `🌵
     __    __   _ __ 
    / /__ / /__(_) /_
   / _ _ \/ //_/ / __/

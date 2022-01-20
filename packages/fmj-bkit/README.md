@@ -1,36 +1,44 @@
-# bkit 脚手架
+<!--
+ * @Author: guokai05
+ * @Date: 2021-04-22 00:14:49
+ * @LastEditors: guokai05
+ * @LastEditTime: 2022-01-20 21:00:19
+-->
+# ddkit 脚手架
 
 ```
-    __    __   _ __
-   / /__ / /__(_) /_
-  / _ _ \/ //_/ / __/
- / /_/ / ,< / / /_
-/_.___/_/|_/_/\___/
+                      __                     __
+   ____ ___  ______  / /______ _(_)___ _____/ /___ _
+  / __ `/ / / / __ \/ //_/ __ `/ / __ `/ __  / __ `/
+ / /_/ / /_/ / /_/ / ,< / /_/ / / /_/ / /_/ / /_/ / 
+ \__, /\__,_/\____/_/|_|\__,_/_/\__, /\__,_/\__, /  
+/____/                         /____/      /____/   
+  
 
 ```
 
 ## 📦 安装
 
 ```
-npm install -g bkit
+npm install -g ddkit
 
 //or
 
-yarn global add bkit
+yarn global add ddkit
 ```
 
 ## 创建项目
 
 ```
-bkit create my-app
+ddkit create my-app
 ```
 
 ## 命令
 
 ```
-bkit -v 查询版本号
-bkit --help 获取帮助
-bkit update 检查更新
+ddkit -v 查询版本号
+ddkit --help 获取帮助
+ddkit update 检查更新
 ```
 
 ## 本地开发
@@ -38,7 +46,12 @@ bkit update 检查更新
 ```
 npm link
 
-之后正常使用bkit 命令
+之后正常使用ddkit 命令
+```
+
+## 发布npm
+```
+npm publish 
 ```
 
 ## 工具
@@ -55,8 +68,8 @@ npm link
 
 ```
 npm WARN tsutils@3.17.1 requires a peer of typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta but none is installed. You must install peer dependencies yourself.
-npm WARN bkit@1.0.0 No description
-npm WARN bkit@1.0.0 No repository field.
+npm WARN ddkit@1.0.0 No description
+npm WARN ddkit@1.0.0 No repository field.
 
 removed 3 packages and audited 164 packages in 2.957s
 
@@ -65,12 +78,6 @@ run `npm fund` for details
 
 found 0 vulnerabilities
 
-/usr/local/bin/bkit -> /usr/local/lib/node_modules/bkit/bin/index
-/usr/local/lib/node_modules/bkit -> /Users/guokai/Desktop/DIDI/bkit
-```
-
-## Todo
-
-```
-eslint Tslint 百度这边的规范
+/usr/local/bin/ddkit -> /usr/local/lib/node_modules/ddkit/bin/index
+/usr/local/lib/node_modules/ddkit -> /Users/guokai/Desktop/DIDI/ddkit
 ```

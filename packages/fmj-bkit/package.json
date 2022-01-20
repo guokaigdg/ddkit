@@ -1,6 +1,6 @@
 {
-    "name": "bkit",
-    "version": "1.2.0",
+    "name": "ddkit",
+    "version": "1.2.1",
     "description": "> TODO: description",
     "main": "lib/Pkit.js",
     "scripts": {
@@ -8,7 +8,7 @@
         "lint": "eslint src"
     },
     "bin": {
-        "bkit": "./bin/index"
+        "ddkit": "./bin/index"
     },
     "keywords": [],
     "author": "ma_meng",
